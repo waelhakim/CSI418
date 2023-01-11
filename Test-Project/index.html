@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slick</title>
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css"/>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Seaweed+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+
+    s
+    <style>
+        .slider{
+            width: 80%;
+            margin: 0 auto;
+
+        }
+
+        .slick-slide {
+         margin: 0 27px;
+         height: 310px;
+        }
+        .slick-next{
+            position: absolute;
+            top: 150px;
+        }
+        .slick-prev{
+            position: absolute;
+            top: 150px; 
+        }
+
+    </style>
+
+</head>
+<body>
+    <div>
+    <div class="main_titles">Pop Corn</div>
+    <div id="main-div-container1" class="main-div-contaner-class">
+       
+        <div class="content-div" id="id-div-container-1">
+            <div class="img-div" id="id-img-container-1"> 
+                <img src="resources/imgpopcorn2.jpg" alt="popcorn image">
+                <div class="side-div">Salt</div>
+                <input type="checkbox" class="item-checkbox" id="item-checkbox-1">
+            </div>
+            <div class="content-div2" id="id-content-div2-1">
+                <br>
+            <label for="quantity-popcorn">Small</label>
+            <input type="number" id="quantity-popcorn" min="0" max="20" value="0" class="quantity-num" onclick="popcornSmall()" >
+            <label for="quantity-popcorn-medium">Medium</label>
+            <input type="number" id="quantity-popcorn-medium" min="0" max="20" value="0"class="quantity-num" >
+            <label for="quantity-popcorn-large">Large</label>
+            <input type="number" id="quantity-popcorn-large" min="0" max="20" value="0"class="quantity-num">
+            <br>
+            <br>
+
+            </div>
+        </div>
+
+
+
+
+
+        <div class="content-div" id="id-div-container-2">
+            <div class="img-div" id="id-img-container-2"> 
+                <img src="resources/gingerbread-popcorn-image.jpg" alt="popcorn image">
+                <div class="side-div">Ginger bread</div>
+                <input type="checkbox" class="item-checkbox" id="item-checkbox-2">
+            </div>
+            <div class="content-div2" id="id-content-div2-2">
+
+            <br>
+            <label for="quantity-popcorn-ginger-S">Small</label>
+            <input type="number" id="quantity-popcorn-ginger-S" min="0" max="20" value="0" class="quantity-num" >
+            <label for="quantity-popcorn-ginger-M">Medium</label>
+            <input type="number" id="quantity-popcorn-ginger-M" min="0" max="20" value="0"class="quantity-num" >
+            <label for="quantity-popcorn-ginger-L">Large</label>
+            <input type="number" id="quantity-popcorn-ginger-L" min="0" max="20" value="0"class="quantity-num">
+            <br>
+            <br>
+
+            </div>
+        </div>
+
+
+        
+        <div class="content-div" id="id-div-container-3">
+            <div class="img-div" id="id-img-container-3"> 
+                <img src="resources/img-spicy-mango-popcorn.png" alt="popcorn image">
+                <div class="side-div">Spicy</div>
+                <input type="checkbox" class="item-checkbox" id="item-checkbox-3">
+            </div>
+            <div class="content-div2" id="id-content-div2-3">
+
+            <br>
+            <label for="quantity-popcorn-spicy-S">Small</label>
+            <input type="number" id="quantity-popcorn-spicy-S" min="0" max="20" value="0" class="quantity-num" >
+            <label for="quantity-popcorn-spicy-M">Medium</label>
+            <input type="number" id="quantity-popcorn-spicy-M" min="0" max="20" value="0"class="quantity-num" >
+            <label for="quantity-popcorn-spicy-L">Large</label>
+            <input type="number" id="quantity-popcorn-spicy-L" min="0" max="20" value="0"class="quantity-num">
+            <br>
+            <br>
+
+            </div>
+        </div>
+
+
+        <div class="content-div" id="id-div-container-4">
+            <div class="img-div" id="id-img-container-4"> 
+                <img src="resources/herb-popcorn.jpg" alt="popcorn image">
+                <div class="side-div">Herb</div>
+                <input type="checkbox" class="item-checkbox" id="item-checkbox-4">
+            </div>
+            <div class="content-div2" id="id-content-div2-4">
+            <br>
+            <label for="quantity-popcorn-herb-S">Small</label>
+            <input type="number" id="quantity-popcorn-herb-S" min="0" max="20" value="0" class="quantity-num" >
+            <label for="quantity-popcorn-herb-M">Medium</label>
+            <input type="number" id="quantity-popcorn-herb-M" min="0" max="20" value="0"class="quantity-num" >
+            <label for="quantity-popcorn-herb-L">Large</label>
+            <input type="number" id="quantity-popcorn-herb-L" min="0" max="20" value="0"class="quantity-num">
+            <br>
+            <br>
+
+            </div>
+        </div>
+
+
+        <div class="content-div" id="id-div-container-5">
+            <div class="img-div" id="id-img-container-5"> 
+                <img src="resources/cinnamon-sugar-popcorn.jpg" alt="popcorn image">
+                <div class="side-div">Cinnamon-Sugar</div>
+                <input type="checkbox" class="item-checkbox" id="item-checkbox-5">
+            </div>
+            <div class="content-div2" id="id-content-div2-5">
+                <br>
+            <label for="quantity-popcorn-sugar-S">Small</label>
+            <input type="number" id="quantity-popcorn-sugar-S" min="0" max="20" value="0" class="quantity-num" >
+            <label for="quantity-popcorn-sugar-M">Medium</label>
+            <input type="number" id="quantity-popcorn-sugar-M" min="0" max="20" value="0"class="quantity-num" >
+            <label for="quantity-popcorn-sugar-L">Large</label>
+            <input type="number" id="quantity-popcorn-sugar-L" min="0" max="20" value="0"class="quantity-num">
+            <br>
+            <br>
+
+            </div>
+        </div>
+        
+
+
+
+        
+        <div class="content-div" id="id-div-container-6">
+            <div class="img-div" id="id-img-container-6"> 
+                <img src="resources/BBQ-popcorn-img.jpg" alt="popcorn image">
+                <div class="side-div">BBQ</div>
+                <input type="checkbox" class="item-checkbox" id="item-checkbox-6">
+            </div>
+            <div class="content-div2" id="id-content-div2-6">
+
+            <br>
+            <label for="quantity-popcorn-bbq-S">Small</label>
+            <input type="number" id="quantity-popcorn-bbq-S" min="0" max="20" value="0" class="quantity-num" >
+            <label for="quantity-popcorn-bbq-M">Medium</label>
+            <input type="number" id="quantity-popcorn-bbq-M" min="0" max="20" value="0"class="quantity-num" >
+            <label for="quantity-popcorn-bbq-L">Large</label>
+            <input type="number" id="quantity-popcorn-bbq-L" min="0" max="20" value="0"class="quantity-num">
+            
+            <br>
+            <br>
+
+            
+        </div>
+    </div>
+</div>  
+
+<br>
+<br>
+<div class="main_titles">Drinks</div>
+<div id="main-div-container2" class="main-div-contaner-class">
+    <div class="content-div" id="id-div-container-2-1">
+        <div class="img-div" id="id-img-container-2-1"> 
+            <img src="resources/CocaCola.jpg" alt="popcorn image">
+            <div class="side-div">Coca-Cola</div>
+            <input type="checkbox" class="item-checkbox" id="item-checkbox-7">
+        </div>
+        <div class="content-div2" id="id-content-div2-1-2">
+
+        <br>
+        <label for="quantity-coke-small">Small</label>
+        <input type="number" id="quantity-coke-small" min="0" max="20" value="0" class="quantity-num" >
+        <label for="quantity-coke-medium">Medium</label>
+        <input type="number" id="quantity-coke-medium" min="0" max="20" value="0"class="quantity-num" >
+        <label for="quantity-coke-large">Large</label>
+        <input type="number" id="quantity-coke-large" min="0" max="20" value="0"class="quantity-num">
+        <br>
+        <br>
+
+        </div>
+    </div>
+
+
+
+
+
+    <div class="content-div" id="id-div-container-2-2">
+        <div class="img-div" id="id-img-container-2-2"> 
+            <img src="resources/sprite-img.jpg" alt="popcorn image">
+            <div class="side-div">Sprite</div>
+            <input type="checkbox" class="item-checkbox" id="item-checkbox-8">
+        </div>
+        <div class="content-div2" id="id-content-div2-2-2">
+
+        <br>
+        <label for="quantity-sprite">Small</label>
+        <input type="number" id="quantity-sprite-small" min="0" max="20" value="0" class="quantity-num" >
+        <label for="quantity-sprite-medium">Medium</label>
+        <input type="number" id="quantity-sprite-medium" min="0" max="20" value="0"class="quantity-num" >
+        <label for="quantity-sprite-large">Large</label>
+        <input type="number" id="quantity-sprite-large" min="0" max="20" value="0"class="quantity-num">
+        <br>
+        <br>
+
+        </div>
+    </div>
+
+    
+    <div class="content-div" id="id-div-container-2-3">
+        <div class="img-div" id="id-img-container-2-3"> 
+            <img src="resources/Juice.webp" alt="popcorn image">
+            <div class="side-div">Orange Juice</div>
+            <input type="checkbox" class="item-checkbox" id="item-checkbox-9">
+        </div>
+        <div class="content-div2" id="id-content-div2-3-2">
+
+        <br>
+        <label for="quantity-orange-small">Small</label>
+        <input type="number" id="quantity-orange-small" min="0" max="20" value="0" class="quantity-num" >
+        <label for="quantity-orange-medium">Medium</label>
+        <input type="number" id="quantity-orange-medium" min="0" max="20" value="0"class="quantity-num" >
+        <label for="quantity-orange-large">Large</label>
+        <input type="number" id="quantity-orange-large" min="0" max="20" value="0"class="quantity-num">
+        <br>
+        <br>
+
+        </div>
+    </div>
+
+
+    <div class="content-div" id="id-div-container-2-4">
+        <div class="img-div" id="id-img-container-2-4"> 
+            <img src="resources/Pinapple juice-img.jpg" alt="popcorn image">
+            <div class="side-div">Pinapple Juice</div>
+            <input type="checkbox" class="item-checkbox" id="item-checkbox-10">
+        </div>
+        <div class="content-div2" id="id-content-div2-4-2">
+
+        <br>
+        <label for="quantity-pinapple-small">Small</label>
+        <input type="number" id="quantity-pineapple-small" min="0" max="20" value="0" class="quantity-num" >
+        <label for="quantity-pinapple-medium">Medium</label>
+        <input type="number" id="quantity-pineapple-medium" min="0" max="20" value="0"class="quantity-num" >
+        <label for="quantity-pinapple-large">Large</label>
+        <input type="number" id="quantity-pineapple-large" min="0" max="20" value="0"class="quantity-num">
+        <br>
+        <br>
+
+        </div>
+    </div>
+
+
+    <div class="content-div" id="id-div-container-2-5">
+        <div class="img-div" id="id-img-container-2-5"> 
+            <img src="resources/Chocolate MIlkshake-img.jpg" alt="popcorn image">
+            <div class="side-div">Choco Milkshake</div>
+            <input type="checkbox" class="item-checkbox" id="item-checkbox-11">
+        </div>
+        <div class="content-div2" id="id-content-div2-5-2">
+
+        <br>
+        <label for="quantity-milkshake-small">Small</label>
+        <input type="number" id="quantity-milkshake-small" min="0" max="20" value="0" class="quantity-num" >
+        <label for="quantity-milkshake-medium">Medium</label>
+        <input type="number" id="quantity-milkshake-medium" min="0" max="20" value="0"class="quantity-num" >
+        <label for="quantity-milkshake-large">Large</label>
+        <input type="number" id="quantity-milkshake-large" min="0" max="20" value="0"class="quantity-num">
+        <br>
+        <br>
+
+        </div>
+    </div>
+    
+
+
+
+    
+    <div class="content-div" id="id-div-container-2-6">
+        <div class="img-div" id="id-img-container-2-6"> 
+            <img src="resources/coffee-img.webp" alt="popcorn image">
+            <div class="side-div">Coffee</div>
+            <input type="checkbox" class="item-checkbox" id="item-checkbox-12">
+        </div>
+        <div class="content-div2" id="id-content-div2-6-2">
+
+        <br>
+        <label for="quantity-coffee-small">Small</label>
+        <input type="number" id="quantity-coffee-small" min="0" max="20" value="0" class="quantity-num" >
+        <label for="quantity-coffee-medium">Medium</label>
+        <input type="number" id="quantity-coffee-medium" min="0" max="20" value="0"class="quantity-num" >
+        <label for="quantity-coffee-large">Large</label>
+        <input type="number" id="quantity-coffee-large" min="0" max="20" value="0"class="quantity-num">
+        <br>
+        <br>
+
+        
+    </div>
+</div>
+</div>  
+
+
+<br>
+<br>
+
+<div class="main_titles">Food</div>
+<div id="main-div-container3" class="main-div-contaner-class">
+       
+    <div class="content-div" id="id-div-container-3-1">
+        <div class="img-div" id="id-img-container-3-1"> 
+            <img src="resources/hotdogs.jpg" alt="popcorn image">
+            <div class="side-div">Hot-Dogs</div>
+            <input type="checkbox" class="item-checkbox" id="item-checkbox-13">
+        </div>
+        <div class="content-div2" id="id-content-div2-1-3">
+
+        <br>
+        <label for="quantity-hotdog-small">Small</label>
+        <input type="number" id="quantity-hotdog-small" min="0" max="20" value="0" class="quantity-num" >
+        <label for="quantity-hotdog-medium">Medium</label>
+        <input type="number" id="quantity-hotdog-medium" min="0" max="20" value="0"class="quantity-num" >
+        <label for="quantity-hotdog-large">Large</label>
+        <input type="number" id="quantity-hotdog-large" min="0" max="20" value="0"class="quantity-num">
+        <br>
+        <br>
+
+        </div>
+    </div>
+
+
+
+
+
+    <div class="content-div" id="id-div-container-3-2">
+        <div class="img-div" id="id-img-container-3-2"> 
+            <img src="resources/Stuffed-Spinach-Crepes-img.jpg" alt="popcorn image">
+            <div class="side-div">Salty Crepe</div>
+            <input type="checkbox" class="item-checkbox" id="item-checkbox-14">
+        </div>
+        <div class="content-div2" id="id-content-div2-2-3">
+
+        <br>
+        <label for="quantity-saltycrepe-small">Small</label>
+        <input type="number" id="quantity-saltycrepe-small" min="0" max="20" value="0" class="quantity-num" >
+        <label for="quantity-saltycrepe-medium">Medium</label>
+        <input type="number" id="quantity-saltycrepe-medium" min="0" max="20" value="0"class="quantity-num" >
+        <label for="quantity-saltycrepe-large">Large</label>
+        <input type="number" id="quantity-saltycrepe-large" min="0" max="20" value="0"class="quantity-num">
+        <br>
+        <br>
+
+        </div>
+    </div>
+
+    
+    <div class="content-div" id="id-div-container-3-3">
+        <div class="img-div" id="id-img-container-3-3">
+            <img src="resources/Noodles-img.jpg" alt="popcorn image">
+            <div class="side-div">Noodles</div>
+            <input type="checkbox" class="item-checkbox" id="item-checkbox-15">
+        </div>
+        <div class="content-div2" id="id-content-div2-3-3">
+
+        <br>
+        <label for="quantity-noodles-small">Small</label>
+        <input type="number" id="quantity-noodles-small" min="0" max="20" value="0" class="quantity-num" >
+        <label for="quantity-noodles-medium">Medium</label>
+        <input type="number" id="quantity-noodles-medium" min="0" max="20" value="0"class="quantity-num" >
+        <label for="quantity-noodles-large">Large</label>
+        <input type="number" id="quantity-noodles-large" min="0" max="20" value="0"class="quantity-num">
+        <br>
+        <br>
+
+        </div>
+    </div>
+
+
+    <div class="content-div" id="id-div-container-3-4">
+        <div class="img-div" id="id-img-container-3-4"> 
+            <img src="resources/vegan-nacho-cheese.webp" alt="popcorn image">
+            <div class="side-div">Nachos</div>
+            <input type="checkbox" class="item-checkbox" id="item-checkbox-16">
+        </div>
+        <div class="content-div2" id="id-content-div2-4-3">
+
+        <br>
+        <label for="quantity-nachos-small">Small</label>
+        <input type="number" id="quantity-nachos-small" min="0" max="20" value="0" class="quantity-num" >
+        <label for="quantity-nachos-medium">Medium</label>
+        <input type="number" id="quantity-nachos-medium" min="0" max="20" value="0"class="quantity-num" >
+        <label for="quantity-nachos-large">Large</label>
+        <input type="number" id="quantity-nachos-large" min="0" max="20" value="0"class="quantity-num">
+        <br>
+        <br>
+
+        </div>
+    </div>
+
+
+    <div class="content-div" id="id-div-container-3-5">
+        <div class="img-div" id="id-img-container-3-5"> 
+            <img src="resources/Mini-Burgers-img.jpg" alt="popcorn image">
+            <div class="side-div">Mini Burger</div>
+            <input type="checkbox" class="item-checkbox" id="item-checkbox-17">
+        </div>
+        <div class="content-div2" id="id-content-div2-5-3">
+
+        <br>
+        <label for="quantity-burger-small">Small</label>
+        <input type="number" id="quantity-burger-small" min="0" max="20" value="0" class="quantity-num" >
+        <label for="quantity-burger-medium">Medium</label>
+        <input type="number" id="quantity-burger-medium" min="0" max="20" value="0"class="quantity-num" >
+        <label for="quantity-burger-large">Large</label>
+        <input type="number" id="quantity-burger-large" min="0" max="20" value="0"class="quantity-num">
+        <br>
+        <br>
+
+        </div>
+    </div>
+    
+
+
+
+    
+    <div class="content-div" id="id-div-container-3-6">
+        <div class="img-div" id="id-img-container-3-6"> 
+            <img src="resources/chocolate-crepes.jpg" alt="popcorn image">
+            <div class="side-div">Crepe</div>
+            <input type="checkbox" class="item-checkbox" id="item-checkbox-18">
+        </div>
+        <div class="content-div2" id="id-content-div2-6-3">
+
+        <br>
+        <label for="quantity-crepe-small">Small</label>
+        <input type="number" id="quantity-crepe-small" min="0" max="20" value="0" class="quantity-num">
+        <label for="quantity-crepe-medium">Medium</label>
+        <input type="number" id="quantity-crepe-medium" min="0" max="20" value="0"class="quantity-num" >
+        <label for="quantity-crepe-large">Large</label>
+        <input type="number" id="quantity-crepe-large" min="0" max="20" value="0"class="quantity-num">
+       
+        <br>
+        <br>
+
+        
+    </div>
+</div>
+</div>  
+
+<div id="cart-total">
+<Table id="myTable">
+    <tr style="border-bottom: 5px solid;">
+        <th>Items</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Total</th>
+    </tr>
+
+</Table>
+</div>
+<div id="totalPriceDiv">
+<label id="idtotalPrice">TOTAL PRICE :</label>
+</div>
+<a id="next-page-arrow" href="#nextPage">
+    &#8594;
+</a>
+
+</body  type="text/javascript">
+
+<script type="application/javascript" src="index.js"> </script>
+<script type="application/javascript" src="cart.js"> </script>
+</html>

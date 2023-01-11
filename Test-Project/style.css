@@ -1,0 +1,147 @@
+body{
+   background-color: #1f1f1f;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: 'Seaweed Script', cursive;
+}
+img{
+    height: 200px;
+}
+.div-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 30px;
+    row-gap: 145px;
+}
+.content-div{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+
+    width: 300px;
+    cursor: pointer;
+}
+.content-div2{
+    width: 100%;
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: rgb(255, 72, 0);
+    top: 213px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.img-div{
+    position: relative;
+}
+.item-checkbox{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    scale: 1.5;
+    border-radius: 10px;
+    accent-color: rgb(49, 177, 49);
+    cursor: pointer;
+}
+.img-div > img{
+    width: 100%;
+    border-radius: 9px;
+
+}
+.quantity-num{
+    width: 35px;
+    cursor: pointer;
+}
+
+#next-page-arrow{
+    background-color: rgb(255, 72, 0);
+    height: 120px;
+    width: 120px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 100px;
+    text-align: center;
+    margin-left: 46%;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+
+
+
+}
+#next-page-arrow:hover{
+    background-color: rgb(220, 171, 96);
+}
+#next-page-arrow:active{
+    background-color: rgb(49, 177, 49);
+}
+#next-page-arrow > img{
+    height: 100px;
+}
+
+#popcorn-menu{
+    cursor: pointer;
+}
+
+#overall-price{
+    background-color: rgb(255, 72, 0);;
+    width: 220px;
+    height: 70px;
+    font-size: 20px;
+    margin-top: 87px;
+}
+
+
+.side-div{
+    width: 135px;
+    background-color: rgb(255, 72, 0);
+    position: absolute;
+    left: 80%;
+    top: 100px;
+    transform: rotate(90deg);
+    text-align: center;
+    font-size: 19px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+
+
+
+
+.main_titles{
+    color: white;
+    font-size: 40px;
+}
+#cart-total{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+th{
+border-bottom: 2px solid wheat;
+padding: 20px;
+}
+
+table{
+    align-items: center;
+    text-align: center;
+}
+#totalPriceDiv{
+    text-align: center;
+    margin-bottom: 100px;
+}
+#idtotalPrice{
+    color: white;
+    font-size: 2rem;
+
+}
